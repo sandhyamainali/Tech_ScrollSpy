@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{
+            display:none;
+        }
+    </style>
+</head>
+<body>
+    
+<h1>Hello</h1>
+    <div class="a">
+        <ul>
+            <li>App</li>
+            <li>Apple</li>
+            <li>Application</li>
+        </ul>
+    </div>
+     <button class="aa">show</button>
+     <button class="bb">hide</button>
+     <button class="cc">toggle</button>
+     <button class="dd">slidetoggle</button>
+     <button class="ee">SlideDown</button>
+     <button class="ff">Slideup</button>
+     <button class="gg">fadeout</button>
+     <button class="hh">fadein</button>
+     <button class="ii">append</button>
+     <button class="jj">prepend</button>
+     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+     <script>
+         $('.ii').click(function(){
+            $('.a').append('<li>Mango</li>')
+        })
+        $('.jj').click(function(){
+            $('.a').prepend('<li>Mango</li>')
+        })
+        $('.aa').click(function(){
+            $('.a').show()
+        })
+        $('.bb').click(function(){
+            $('.a').hide()
+        })
+        $('.cc').click(function(){
+            $('.a').toggle()
+        })
+        $('.dd').click(function(){
+            $('.a').slideToggle()
+        })
+        $('.ee').click(function(){
+            $('.a').slideDown()
+        })
+        $('.ff').click(function(){
+            $('.a').slideUp()
+        })
+        $('.gg').click(function(){
+            $('.a').fadeOut(4000)
+        })
+        $('.hh').click(function(){
+            $('.a').fadeIn(4000)
+        })
+     </script>
+    
+</body>
+</html>

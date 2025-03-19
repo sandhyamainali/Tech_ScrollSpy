@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height:3000px;
+        }
+        header{
+            background-color: aqua;padding: 20px;width: 100%;height: auto;
+        }
+        .fixed{
+            background: pink;position: fixed;
+        }
+        .a{
+            display:none;
+        
+        }
+        .aa{
+            background-color: aquamarine; position:fixed;
+        }
+        
+    </style>
+</head>
+<body>
+<header>
+    <img class= 'a' width="100px" src="image/logo.jpg" alt="">
+    <img class='b' width="100px" src="https://marketplace.canva.com/EAFaFUz4aKo/2/0/1600w/canva-yellow-abstract-cooking-fire-free-logo-JmYWTjUsE-Q.jpg" alt="">
+</header>
+<script>
+    // window.addEventListener('scroll',()=>{
+    //     // console.log(scrollY)
+    //     if(scrollY> 300){
+    //         document.querySelector('header').classList.add('fixed')
+    //         document.querySelector('.b').style.display='none'
+    //         document.querySelector('.a').style.display='block'
+    //     }else{
+    //         document.querySelector('header').classList.remove('fixed')
+    //          document.querySelector('.b').style.display='block'
+    //         document.querySelector('.a').style.display='none'
+    //     }
+    // })
+
+    window.addEventListener('scroll',()=>{
+        if(scrollY>200){
+            document.querySelector('header').classList.add('aa')
+            document.querySelector('.a').style.display='block'
+            document.querySelector('.b').style.display='none'
+        }else{
+            document.querySelector('header').classList.remove('aa')
+            document.querySelector('.a').style.display='none'
+            document.querySelector('.b').style.display='block'
+        }
+    })
+</script>
+    
+</body>
+</html>

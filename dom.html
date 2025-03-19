@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, ea.</p>
+    <button onclick="document.getElementsByTagName('p')[0].style.color='red'">Click</button> 
+     <!-- we can use query selector for all such as class (.p),id(#id),tag(p), also we can use css by .style -->
+     <button onclick="document.querySelector('p').style.background='blue'"> bg</button>
+    <button onclick="document.querySelector('p').style.removeProperty(('background'))">Remove</button>
+<hr>
+    <!-- to add,remove and toggle class -->
+    
+    <div class="b">Lorem ipsum dolor, sit amet
+         consectetur adipisicing elit. Libero sapiente voluptatum eum.</div> 
+
+     
+    <button onclick="document.querySelector('.b').classList.remove('abcd')">Remove</button>
+    <button onclick="document.querySelector('.b').classList.toggle('abcd')">Toggle</button>
+    <button onclick="document.querySelector('.b').classList.add('abcd')">Add</button> 
+<style>
+    ul{display:none;}
+    li{
+        list-style:none;
+    }
+    .a{display:block;}
+    .abcd{
+        color:azure;
+        background-color: black;
+    }
+</style>
+    <button onclick="aa()" class="mob">open</button>
+    <div>
+        <ul >
+            <li>App</li>
+            <li>Apple</li>
+            <li>Application</li>
+
+        </ul>
+    </div>
+    <input type="password" class="pass">
+    <button onclick="password()">Show</button>
+    
+    <script>
+        function aa(){
+            if(document.querySelector(".mob").innerHTML=='open'){
+                document.querySelector('ul').classList.toggle('a')
+            document.querySelector('.mob').innerHTML='close'
+            }
+            else{
+                document.querySelector('ul').classList.toggle('a')
+            document.querySelector('.mob').innerHTML='open'
+            }
+            
+        }
+        function password(){
+            if(document.querySelector('.pass').type =='password'){
+                document.querySelector('.pass').type='text'
+               document.querySelector('.pass').innerHTML == 'Show'
+        } else
+        {
+            document.querySelector('.pass').type='password'
+            document.querySelector('.pass').innerHTML=='Hide'
+        }
+    }
+    </script>
+    <!-- <style>
+        .abcd{
+            background-color: rgb(215, 250, 229);
+            color:rgb(255, 196, 0);
+            font-size:23px;
+
+        }
+    </style> -->
+    </body>
+
+</html>

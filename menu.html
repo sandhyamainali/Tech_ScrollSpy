@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            display:none;
+        }
+        .a{
+            display:block;
+            color:aqua;
+            background-color: blue;
+            width:200px;
+            height:200px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: red;
+        }
+        ul{
+            display: flex;
+            
+            gap:20px;
+        }
+        ul{
+            list-style: 
+            none;
+        }
+        h1{
+            display:none;
+        }
+        .b{
+            display: block;
+        }
+        
+        
+        @media screen and (max-width:300px) {
+            
+            ul{
+                flex-direction: column;
+                align-items: center;
+            }
+            h1{
+            display:none;
+            }
+            h1:hover :p{
+                display:none;
+            }
+            p{
+                display: block;
+            }
+            p:hover :h1{
+                display:none;
+            }
+            .find{
+                display:none;
+            }
+            
+            .b{
+                display:block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        
+
+        <ul>
+            <li onclick="aa()" class="b">Home</li>
+            <li onclick="document.querySelector('p').classList.toggle('a')">About Us</li>
+           
+            <li onclick="">Service</li>
+            <li onclick="document.querySelector('.find').classList.toggle('b')">Contact Us</li>
+        
+        </ul>
+
+        
+           
+        
+        
+        
+        <h1>Welcome to my new page</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Deserunt, consectetur dolores! Maiores unde necessitatibus 
+            nisi cupiditate delectus saepe, neque ducimus.</p>
+            
+            <div class="find">
+
+                <li>Facebook</li>
+                <li>Insta</li>
+            </div>
+
+
+    </nav>
+
+    <script>
+        function aa(){
+            if(document.querySelector('h1').innerText == 'Home')
+            {
+                document.querySelector('h1').classList.toggle('b')
+
+            }
+            else{
+                document.querySelector('h1').classList.toggle('b')
+            }
+           
+        }
+    </script>
+    
+</body>
+</html>

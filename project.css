@@ -45,9 +45,11 @@ section{
 #home { background-color: #e7eaed;
 
 }
- #services { background-color: #e9ecef; }
- #about { background-color: #f8f9fa; }
- #contact { background-color: #e9ecef; }
+ #ourgoal{ background-color: #07223d; }
+ #aboutus { background-color: #f8f9fa; }
+ #whatwedo { background-color: #e9ecef; }
+ #footer { background-color: #e9ecef; }
+ 
  /* .position{
     position:fixed;
     top:4.7em;
@@ -63,6 +65,66 @@ section{
     text-align:center;
   }
   .exp{
-    width: 20%;
     text-align: center;
+    margin:10px;
+    background-color: #ea7c4d;
+    padding:3em;
   }
+  .goal{
+    border-radius: 90%;
+    width:79%;
+    height:13rem;
+  }
+  .temp{
+    border-bottom: 1%;
+  }
+  .service{
+    text-align: center;
+    padding:2em;
+    background-color: #f8f9fa;
+  }
+  .bg1{
+    color: #ea7c4d;
+    
+    
+}
+.align{
+    text-align: left;
+    padding:3px;
+    
+text-align: center;
+    
+    
+}
+.w1{
+    width:300px;
+    height:200px;
+    margin:2px;
+}
+.end{
+    top:110px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .header{
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+
+    }
+    #home{
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;   
+
+    }
+    #about{
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+}
